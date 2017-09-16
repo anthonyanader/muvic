@@ -4,7 +4,7 @@
 Muvic
 </h1>
 <p align = "center">
-<a scr ="https://devpost.com/software/muvic>"<img src="https://hackthenorth.com/img/black-logo.svg"></a>
+<a src ="https://devpost.com/software/muvic>"<img src="https://hackthenorth.com/img/black-logo.svg"></a>
 </p>
 
 <h2> Inspiration </h2>
@@ -33,7 +33,7 @@ Logo graphics by <a href="https://thenounproject.com/tanguy49">tnp_tanguy49</a> 
 
 
 <h1 align = "center">
-<img scr="http://www198.lunapic.com/editor/working/150555764556733?978257898">
+<img src="http://www198.lunapic.com/editor/working/150555764556733?978257898">
 </h1>
 <p align = "center">
 Muvic -- music that moves for you.
