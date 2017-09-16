@@ -43,36 +43,37 @@
             <li><a href="#">Collection</a></li>
             <li><a href="#">Shop</a></li>
         </ul>
-        <div class="cover-photo">
-        </div>
+        <div class="cover-photo"></div>
+        <div id="arrow-click" onclick="scroll_to('#intro')" style="cursor: pointer;" class="arrow-down center-align"></div>
     </header>
     <body>
-        <div class="row">
-            <h1 class="center-align">Muvïc</h1>
-        </div>
-        <div class="container">
-            <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
-                <p class="center-align">Add or Drop favorite Musical Sheet</p>
+        <section id="intro">
+            <div class="row">
+                <h1 class="center-align">Muvïc</h1>
             </div>
+            <div class="container">
+                <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
+                    <p class="center-align">Add or Drop favorite Musical Sheet</p>
+                </div>
 
-            <div class="collection" id="previews">
-                <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
-                    <div class="left pv zdrop-info" data-dz-thumbnail>
-                        <div>
-                            <span data-dz-name></span> <span data-dz-size></span>
+                <div class="collection" id="previews">
+                    <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
+                        <div class="left pv zdrop-info" data-dz-thumbnail>
+                            <div>
+                                <span data-dz-name></span> <span data-dz-size></span>
+                            </div>
+                            <div class="progress">
+                                <div class="determinate" style="width:0" data-dz-uploadprogress></div>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="determinate" style="width:0" data-dz-uploadprogress></div>
-                        </div>
-                    </div>
 
-                    <div class="secondary-content actions">
-                        <a href="#!" class="btn waves-effect waves-light start"><i class="large material-icons">add</i></a>
-                        <a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light"><i class="large material-icons">clear</i></a>
+                        <div class="secondary-content actions">
+                            <a href="#!" class="btn waves-effect waves-light start"><i class="large material-icons">add</i></a>
+                            <a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light"><i class="large material-icons">clear</i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
     </body>
 </html>
