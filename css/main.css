@@ -15,7 +15,7 @@ MAST-HEAD
     background: url(../img/cover-photo-muvic.jpg) center center no-repeat;
     background-size: cover;
     opacity: 0.5;
-    height: 75vh;
+    height: 50vh;
     text-align:center;
 	display: flex;
 	margin: 0;
@@ -39,6 +39,17 @@ INTRODUCTION
 
 .upload-section {
 
+}
+
+/*******************************************************************
+UPLOAD FORM
+*******************************************************************/
+.secondary-content {
+    padding: 0 1%;
+}
+
+.secondary-content, a {
+    width: 50px;
 }
 
 /*******************************************************************
