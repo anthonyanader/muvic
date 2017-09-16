@@ -1,26 +1,43 @@
 % Time to test some signal processing stuff
-% Let's collect a sample
-% Also, this looks neat: https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data
-
 pkg load signal;
 
-% 8Khz 2 second recording of A4
-% fs = 8000;
-% t = 2;
-% y = record(t, fs);
-% save -mat A4.mat y
+fs = 44000;
+recorder = audiorecorder(fs, 16, 1);
 
-load('A4.mat');
+max_freq = 3000;
+t = 0.1;
 
-length = 2^nextpow2(numel(y));
-fs = 8000;
-f = fft(y, length);
-cutoff = floor(numel(f) / 2);
-p = abs(f(1:cutoff));
-x = fs*(0:cutoff-1)/length;
-plot(x', p);
+N = 2^nextpow2(fs*t);
+cutoff = max_freq/fs*N;
+x = fs*(0:cutoff-1)/N;
+x = x';
 
-[pks, loc, extra] = findpeaks(p, 'DoubleSided');
-hold on;
-plot(fs*(loc .- 1)/length, pks, 'b.', 'MarkerSize', 20);
-hold off;
+last = 0;
+last_count = 0;
+
+while true
+  recordblocking(recorder, t);
+  data = getaudiodata(recorder);
+  
+  f = fft(data, N);
+  p = abs(f(1:cutoff));
+  
+  [max_val, max_index] = max(p);
+  found_freq = round(fs*max_index/N);
+  key_num = round(12*log2(found_freq/440)+48);
+  
+  if key_num == last
+    last_count += 1;
+  else
+    last_count = 0;
+  end
+  last = key_num;
+  
+  if last_count > 3
+    title(key_num);
+  else
+    title('--');
+  end
+  
+  drawnow;
+end
