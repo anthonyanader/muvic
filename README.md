@@ -3,17 +3,27 @@
 
 Muvic
 </h1>
-
-<h3 align = "center"> Move Music </h3>
 <p align = "center">
 Hack the North 2017 Project
 </p>
 
-
-<h3> Inspiration </h3>
+<h2> Inspiration </h2>
 <p>
-For too long musicians have been loosing their place to flip sheet music. Using PDFs of sheet music muvic will move sheet music for you. This lets you keep all your music tidy on a tablet and lets you keep your hands on your instrument at all times. 
+Flipping through music sheets is incredibly annoying. You have to take your hand off your instrument and oftern lose your spot where reading. I, like many other musicians, desperately avoid ever having to turn a page.
+One day while playing piano I thought <em>"what if I didn't have to do this"</em> and the idea for Muvic was born.
 </p>
+
+<h2> About </h2>
+<p>
+Muvic
+</p>
+
+<h2> How It Works <h2>
+
+<h2> Key functionalities </h2>
+
+<h2> Technologies and APIs </h2>
+
 
 
 
