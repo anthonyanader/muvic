@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
-var multer = require('multer')
 
 var routes = require('./routes/index');
 
@@ -24,35 +23,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
-app.get('/upload', function (req, res) {
-    res.render('index')
-})
-
-var storage = multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './uploads')
-    },
-    filename: function (req, file, callback) {
-        callback(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
-    }
-})
-
-app.post('/upload', function (req, res) {
-    var upload = multer({
-        storage: storage,
-        fileFilter: function (req, file, callback) {
-            var ext = path.extname(file.originalname)
-            if (ext !== '.png' && ext !== '.jpg' && ext !== '.gif' && ext !== '.jpeg') {
-                return callback(res.end('Only images are allowed'), null)
-            }
-            callback(null, true)
-        }
-    }).single('userFile');
-    upload(req, res, function (err) {
-        res.end('File is uploaded')
-    })
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -77,10 +47,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
-    error: err
+    error: {}
   });
 });
 
-console.log("Server Started")
 
 module.exports = app;
