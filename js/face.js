@@ -32,15 +32,7 @@ detector.addEventListener("onWebcamConnectFailure", function () {
 detector.addEventListener("onImageResultsSuccess", function (faces, image, timestamp) {
     if (faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0) >= 99) {
         console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
-        $.get("server.js",
-            {
-                movePage: true
-            })
-    } else {
-        $.get("server.js",
-            {
-                movePage: false
-            })
+        window.scrollTo(0, 100); 
     }
 });
 
