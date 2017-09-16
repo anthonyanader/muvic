@@ -1,0 +1,9 @@
+{
+  "name": "muvic",
+  "version": "0.0.0",
+  "description": "Muvic",
+  "main": "server.js",
+  "author": {
+    "name": "Muvic_HTN_Squad"
+  }
+}
