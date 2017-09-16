@@ -32,12 +32,12 @@ detector.addEventListener("onWebcamConnectFailure", function() {
 detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp){
 if(faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0)>= 99){
   console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
-  $.post("server.js",
+  $.get("server.js",
   {
     movePage: true
     })
 }else{
-  $.post("server.js",
+  $.get("server.js",
   {
     movePage: false
   })
