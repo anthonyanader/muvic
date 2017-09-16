@@ -1,0 +1,24 @@
+.sheet-card {
+  padding: 1em 0.5em 0.5em 0.5em !important;
+  user-select: none;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  .add-sheet {
+    bottom: 32px;
+    right: 32px;
+  }
+}
+
+@media (min-width: 601px) {
+  .add-sheet {
+    bottom: 45px;
+    right: 45px;
+  }
+}
