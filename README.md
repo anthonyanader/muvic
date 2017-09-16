@@ -1,9 +1,11 @@
 <h1 align = "center">
 <img src="http://www198.lunapic.com/editor/working/150555764556733?978257898">
-\nMuvic
+
+Muvic
 </h1>
-<h3> Move Music </h3>
-<p>
+
+<h3 align = "center"> Move Music </h3>
+<p align = "center">
 Hack the North 2017 Project
 </p>
 
