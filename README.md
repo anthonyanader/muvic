@@ -1,9 +1,10 @@
 <h1 align = "center">
 <img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431">
-
-Muvic -- Music That Moves For You
 </h1>
 
+<p align = "center">
+Muvic Moves For You
+</p>
 
 <h2> Inspiration </h2>
 <p>
@@ -31,7 +32,7 @@ Logo graphics by <a href="https://thenounproject.com/tanguy49">tnp_tanguy49</a> 
 
 <h2>Devpost Submission</h2>
 <p align = "center">
-<a src="https://devpost.com/software/muvic"><img src="https://hackthenorth.com/img/black-logo.svg"></a>
+<a href="https://devpost.com/software/muvic"><img src="https://hackthenorth.com/img/black-logo.svg"></a>
 </p>
 
 <h3 align = "center">
