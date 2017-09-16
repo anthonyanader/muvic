@@ -1,0 +1,64 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="build/pdf.js"></script>
+<script src="build/pdf.worker.js"></script>
+
+<body>
+    <input type="file", id="pdf-upload">
+
+    <canvas class="c1"></canvas>
+    <div class="container-fluid">
+        <div class="row">
+            <div hidden class="col-md-8" id="affdex_elements" style="width:680px;height:480px;"></div>
+        </div>
+    </div>
+    <div>
+        <button id="start" onclick="onStart()">Start</button>
+        <button id="stop" onclick="onStop()">Stop</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+    <script src="js/face.js"></script>
+
+    <script>
+        document.querySelector("#pdf-upload").addEventListener("change", function (e) {
+            var c1 = document.querySelector("c1")
+            var file = e.target.files[0]
+            var page = 1;
+
+            if (file.type != "application/pdf") {
+                console.error(file.name, "is not a pdf file.")
+                return
+            }
+
+            var fileReader = new FileReader();
+
+            fileReader.onload = function () {
+                var typedarray = new Uint8Array(this.result);
+
+                PDFJS.getDocument(typedarray).then(function (pdf) {
+
+                    console.log("the pdf has ", pdf.numPages, "page(s).")
+                    pdf.getPage(1).then(function (page) {
+                        var viewport = page.getViewport(2.0);
+                        var canvas = document.querySelector("canvas")
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+
+
+                        page.render({
+                            canvasContext: canvas.getContext('2d'),
+                            viewport: viewport
+                        });
+                    });
+
+                });
+            };
+
+            fileReader.readAsArrayBuffer(file);
+        })
+
+    </script>
+</body>
