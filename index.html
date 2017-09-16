@@ -24,13 +24,13 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <header>
-        <nav class="nav-fixed">
+        <nav class="nav-fixed navbar">
           <div class="nav-wrapper">
             <a href="index.html" class="left hide-on-med-and-down brand-logo">Muvïc</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons burger">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="current" href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Collection</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
@@ -38,16 +38,16 @@
         </nav>
 
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="index.html" onclick="$('.button-collapse').sideNav('hide');">Home</a></li>
+            <li><a href="#about"onclick="$('.button-collapse').sideNav('hide');">About</a></li>
+            <li><a href="#"onclick="$('.button-collapse').sideNav('hide');">Collection</a></li>
+            <li><a href="#"onclick="$('.button-collapse').sideNav('hide');">Shop</a></li>
         </ul>
         <div class="cover-photo"></div>
-        <div id="arrow-click" onclick="scroll_to('#intro')" style="cursor: pointer;" class="arrow-down center-align"></div>
+        <div id="arrow-click" onclick="scroll_to('#about')" style="cursor: pointer;" class="arrow-down center-align"></div>
     </header>
     <body>
-        <section id="intro">
+        <section id="about">
             <div class="row">
                 <h1 class="center-align">Muvïc</h1>
             </div>
