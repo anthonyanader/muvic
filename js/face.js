@@ -33,7 +33,7 @@ detector.addEventListener("onImageResultsSuccess", function (faces, image, times
     console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
     if (faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0) >= 90) {
         console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
-        window.scrollBy(0, 50); 
+        window.scrollBy(0, 100); 
     }
 });
 
