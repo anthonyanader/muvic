@@ -1,3 +1,14 @@
+// $("#arrow-click").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $("#intro").offset().top},
+//         'slow');
+// });
+function scroll_to(section){
+	$('html, body').animate({
+		scrollTop: $(section).offset().top
+	},1500);
+}
+
 $(document).ready(function () {
   $(".button-collapse").sideNav();
 
