@@ -40,7 +40,7 @@ MAST-HEAD
     background: url(../img/cover-photo-muvic.jpg) no-repeat center center;
     background-size: cover;
     opacity: 0.95;
-    height: 100vh;
+    height: 95vh;
     text-align:center;
 	display: flex;
 	margin: 0;
@@ -50,10 +50,22 @@ MAST-HEAD
 
 }
 
-/*******************************************************************
-INTRODUCTION
-*******************************************************************/
+.arrow-down {
+  height: 0;
+  width: 0;
+  margin: 0 auto;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #ee6e73;
+}
 
+/*******************************************************************
+INTRO
+*******************************************************************/
+#intro {
+    width: 100%;
+    height: 82vh;
+}
 /*******************************************************************
 UPLOAD FORM
 *******************************************************************/
