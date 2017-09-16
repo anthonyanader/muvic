@@ -28,7 +28,7 @@ detector.addEventListener("onWebcamConnectFailure", function() {
   alert("Webcam access denied");
 });
 
-//post to turn music page or not
+//post to turn music page forward or not
 detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp){
 if(faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0)>= 99){
   console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
