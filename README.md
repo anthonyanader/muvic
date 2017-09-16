@@ -26,8 +26,7 @@ Muvic
 
 
 
-* <p>
-Logo graphics by <a href="https://thenounproject.com/tanguy49">tnp_tanguy49</a> from <a href="https://thenounproject.com/">TheNounProject</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Check out<a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a>
+* <p> Logo graphics by <a href="https://thenounproject.com/tanguy49">tnp_tanguy49</a> from <a href="https://thenounproject.com/">TheNounProject</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Check out<a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a>
 </p>
 
 <h2>Devpost Submission</h2>
