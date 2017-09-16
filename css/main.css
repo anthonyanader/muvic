@@ -5,11 +5,12 @@ nav {
     height: 60px;
     padding:0 2%;
 }
+nav a{
+    line-height: 60px;
+}
 
 a.current {
     text-decoration: underline;
-    line-height: 60px;
-
 }
 
 .brand-logo {
@@ -36,10 +37,10 @@ CARDS
 MAST-HEAD
 *******************************************************************/
 .cover-photo {
-    background: url(../img/cover-photo-muvic.jpg) center center no-repeat;
+    background: url(../img/cover-photo-muvic.jpg) no-repeat center center;
     background-size: cover;
-    opacity: 0.6;
-    height: 65vh;
+    opacity: 0.95;
+    height: 100vh;
     text-align:center;
 	display: flex;
 	margin: 0;
