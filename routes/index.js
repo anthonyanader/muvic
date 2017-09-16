@@ -1,22 +1,25 @@
 var express = require('express');
 var router = express.Router();
+var fileupload = require('express-fileupload');
 
-/* GET home page. */
+router.use(fileupload());
+
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Movic' };
+    res.render('index', { title: 'Movic' });
 });
 
-router.get('/fileupload', function (req, res, next) {
-    var form = new formidable.IncomingForm();
-    form.parse(req, function (err, fields, files) {
-        var oldpath = files.filetoupload.path;
-        var newpath = 'client/temp/' + files.filetoupload.name;
-        fs.rename(oldpath, newpath, function (err) {
-            if (err) throw err;
-            res.render('app', { title: 'Cool, huh!', condition: true, anyArray: [1, 2, 3] });
-        });
-    });
+router.post('/upload', function (req, res, next) {
+    // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+    let sampleFile = req.files.sampleFile;
 
+    // Use the mv() method to place the file somewhere on your server
+    sampleFile.mv('/client/temp/', function (err) {
+        if (err)
+            return res.status(500).send(err);
+
+        res.send('File uploaded!');
+
+    });
 });
 
 module.exports = router;
