@@ -23,13 +23,32 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <header>
-        <div class="cover-photo">
-        </div>
-    </header>
-    <body>
+        <header>
+            <nav class="nav-fixed">
+              <div class="nav-wrapper">
+                <a href="index.html" class="left hide-on-med-and-down brand-logo">Muvïc</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons burger">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Play</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Play</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <div class="cover-photo">
+            </div>
+        </header>
+        <body>
         <div class="row introduction">
-            <h1 class="center-align">Muvic</h1>
+            <h1 class="center-align">Muvïc</h1>
         </div>
         <div class="container">
             <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
@@ -56,7 +75,4 @@
         </div>
 
     </body>
-
-    <footer>
-    </footer>
 </html>
