@@ -4,7 +4,7 @@
 Muvic
 </h1>
 <p align = "center">
-<a src ="https://devpost.com/software/muvic>"<img src="https://hackthenorth.com/img/black-logo.svg"></a>
+<a src="https://devpost.com/software/muvic"><img src="https://hackthenorth.com/img/black-logo.svg"></a>
 </p>
 
 <h2> Inspiration </h2>
