@@ -21,10 +21,8 @@ Muvic
 
 <h2> Technologies, APIs and references </h2>
 
-
-
-
-
+* <p> Affectiva - Affectiva is an emotion measurement technology company that grew out of MIT's Media Lab which has developed a way for computers to recognize human emotions based on facial cues or physiological responses
+<p align = "center"> <a href = "https://www.affectiva.com/"><img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Affectiva_logo.jpg"></a>
 
 * <p> Logo graphics by <a href="https://thenounproject.com/tanguy49">tnp_tanguy49</a> from <a href="https://thenounproject.com/">TheNounProject</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Check out<a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a>
 </p>
