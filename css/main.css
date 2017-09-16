@@ -11,15 +11,25 @@ CARDS
 /*******************************************************************
 MAST-HEAD
 *******************************************************************/
-.mast-head {
-    background-color: #e3f2fd;
-    display:block;
-    padding-top
-    height:250px;
-    width: 100%;
+.cover-photo {
+    background: url(../img/cover-photo-muvic.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    height: 100vh;
+    text-align:center;
+	display: flex;
+	margin: 0;
+	align-items: center;
+	vertical-align: top;
+	white-space: nowrap;
+
 }
-.centered-mast-text{
-    text-align: center;
+
+/*******************************************************************
+INTRODUCTION
+*******************************************************************/
+.introduction{
+
 }
 
 /*******************************************************************
