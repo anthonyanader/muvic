@@ -73,7 +73,7 @@ function upload() {
 }
 
 $("#deletebtn").click(function () {
-    $(".deleteicon").fadeIn('fast');
+    $(".deleteicon").toggle('fast');
 });
 
 function deleteSheet(id) {
