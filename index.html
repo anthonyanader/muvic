@@ -1,79 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Muvic</title>
+<head>
+    <meta charset="utf-8">
+    <title>Muvic</title>
 
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <!-- Import CSS stylesheets -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
-        <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css>
-        <link rel="stylesheet" href="css/main.css">
+    <!-- Import CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css>
+    <link rel="stylesheet" href="css/main.css">
 
 
-        <!--Website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Import jQuery and Materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </head>
-    <header>
-        <nav class="nav-fixed navbar">
-          <div class="nav-wrapper">
+    <!--Import jQuery and Materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<header>
+    <nav class="nav-fixed navbar">
+        <div class="nav-wrapper">
             <a href="index.html" class="left hide-on-med-and-down brand-logo">Muvïc</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons burger">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Collection</a></li>
+                <li><a href="UI/library/index.html">Collection</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
 
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html" onclick="$('.button-collapse').sideNav('hide');">Home</a></li>
-            <li><a href="#about"onclick="$('.button-collapse').sideNav('hide');">About</a></li>
-            <li><a href="#"onclick="$('.button-collapse').sideNav('hide');">Collection</a></li>
-            <li><a href="#"onclick="$('.button-collapse').sideNav('hide');">Shop</a></li>
-        </ul>
-        <div class="cover-photo"></div>
-        <div id="arrow-click" onclick="scroll_to('#about')" style="cursor: pointer;" class="arrow-down center-align"></div>
-    </header>
-    <body>
-        <section id="about">
-            <div class="row">
-                <h1 class="center-align">Muvïc</h1>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html" onclick="$('.button-collapse').sideNav('hide');">Home</a></li>
+        <li><a href="#about" onclick="$('.button-collapse').sideNav('hide');">About</a></li>
+        <li><a href="UI/library/index.html" onclick="$('.button-collapse').sideNav('hide');">Collection</a></li>
+        <li><a href="#" onclick="$('.button-collapse').sideNav('hide');">Shop</a></li>
+    </ul>
+    <div class="cover-photo"></div>
+    <div id="arrow-click" onclick="scroll_to('#about')" style="cursor: pointer;" class="arrow-down center-align"></div>
+</header>
+<body>
+    <section id="about">
+        <div class="row">
+            <h1 class="center-align">Muvïc</h1>
+        </div>
+        <div class="container">
+            <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
+                <p class="center-align">Add or Drop favorite Musical Sheet</p>
             </div>
-            <div class="container">
-                <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
-                    <p class="center-align">Add or Drop favorite Musical Sheet</p>
-                </div>
 
-                <div class="collection" id="previews">
-                    <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
-                        <div class="left pv zdrop-info" data-dz-thumbnail>
-                            <div>
-                                <span data-dz-name></span> <span data-dz-size></span>
-                            </div>
-                            <div class="progress">
-                                <div class="determinate" style="width:0" data-dz-uploadprogress></div>
-                            </div>
+            <div class="collection" id="previews">
+                <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
+                    <div class="left pv zdrop-info" data-dz-thumbnail>
+                        <div>
+                            <span data-dz-name></span> <span data-dz-size></span>
                         </div>
+                        <div class="progress">
+                            <div class="determinate" style="width:0" data-dz-uploadprogress></div>
+                        </div>
+                    </div>
 
-                        <div class="secondary-content actions">
-                            <a href="#!" class="btn waves-effect waves-light start"><i class="large material-icons">add</i></a>
-                            <a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light"><i class="large material-icons">clear</i></a>
-                        </div>
+                    <div class="secondary-content actions">
+                        <a href="#!" class="btn waves-effect waves-light start"><i class="large material-icons">add</i></a>
+                        <a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light"><i class="large material-icons">clear</i></a>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
 </html>
