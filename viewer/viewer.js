@@ -1,12 +1,14 @@
 var data = {
-    title: "not implemented"
+    title: "test"
 };
 uuid = 0;
 data.url = window.location.hash.substr(1);
 
-var theTemplateScript = $("#sheet-template").html();
-var theTemplate = Handlebars.compile (theTemplateScript);
-$(document.body).append (theTemplate (data));
+var ref = firebase.database().ref('users/' + uuid + '/files/').child(data.url.substring(0, data.url.length - 4));
+ref.once("value", function (snapshot) {
+    var sheetname = snapshot.val().name;
+    $("#sheettitle").text(sheetname);
+});
 
 var storage = firebase.storage();
 storage.ref('/users/' + uuid + '/files/' + data.url).getDownloadURL().then(function(url) {
