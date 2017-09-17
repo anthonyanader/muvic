@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="utf-8">
+    <title>Muvïc | You play, Muvïc moves</title>
+
     <!-- jquery and materialize -->
+    <link rel="stylesheet" href="../../css/normalize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -17,18 +20,36 @@
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-storage.js"></script>
 
+    <!-- Favicon code -->
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+    <link rel="manifest" href="../../img/manifest.json">
+    <link rel="mask-icon" href="../../img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicon code -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css">
 </head>
-
-<body>
-
-    <nav>
-        <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo">Collection</a>
+    <nav class="nav-fixed">
+        <div class="nav-wrapper">
+            <a href="index.html" class="left hide-on-med-and-down brand-logo">Collection</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons burger">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="index.html">Collection</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
         </div>
     </nav>
 
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="../../index.html" onclick="$('.button-collapse').sideNav('hide');">Home</a></li>
+        <li><a href="index.html" onclick="$('.button-collapse').sideNav('hide');">Collection</a></li>
+        <li><a href="#" onclick="$('.button-collapse').sideNav('hide');">Shop</a></li>
+    </ul>
+<body>
     <script id="sheets-template" type="text/x-handlebars-template">
         <div class="container sheetcarditem" style="margin-top: 1em;">
             <div class="row">
