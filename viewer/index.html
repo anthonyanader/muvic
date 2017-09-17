@@ -29,6 +29,7 @@
         <h4 class="center" id="sheettitle">Loading...</h4>
         <a id="toolbar-facial-recog" class="waves-effect waves-light btn" style="margin-bottom:1.5em;" onclick="facialRecog()">Enable Facial Recognition</a>
         <a id="toolbar-metronome" class="waves-effect waves-light btn" style="margin-bottom:1.5em;" onclick="doMetronome()">Enable Metronome</a>
+        <a id="toolbar-metronome" class="waves-effect waves-light btn" style="margin-bottom:1.5em;" onclick="doTrack()">Track Measure</a>
         
         <div id="metronome" style="display:none;">
             <form action="#">
@@ -61,6 +62,8 @@
     </script>
 
     <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+
+    <div class="highlight" id="bluebox" style="display:none;"></div>
 
     <div hidden class="col-md-8" id="affdex_elements" style="width:680px;height:480px;"></div>
 
