@@ -60,6 +60,10 @@ function doMetronome() {
     if (metronomeEh) {
         $("#toolbar-metronome").text("Enable Metronome");
         clearInterval(tickInterval);
+        currentMeasure = 0;
+        mCount = 0;
+        tracking = false;
+        $("#bluebox").fadeOut("fast");
     } else {
         tickInterval = setInterval(function () {
             tick();
@@ -68,6 +72,7 @@ function doMetronome() {
     }
     metronomeEh = !metronomeEh;
     $("#metronome").toggle('fast');
+    $("#toolbar-tick").fadeToggle('fast');
 }
 
 currentMeasure = 0;
