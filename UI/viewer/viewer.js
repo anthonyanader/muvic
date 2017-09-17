@@ -37,3 +37,7 @@ storage.ref('/users/' + uuid + '/files/' + data.url).getDownloadURL().then(funct
 }).catch(function(error) {
   // Handle any errors
 });
+
+document.body.onload = function () {
+    onStart();
+}
