@@ -2,22 +2,22 @@
 <a href="http://muvic.org"><img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431"></a>
 </h1>
 
-> Muvïc Moves For You
+> You play, Muvïc moves
 
 <h2> 💡 Inspiration </h2>
 <p>
-Flipping through music sheets is incredibly annoying. You have to take your hand off your instrument to turn the page and often lose the spot you were reading. Musicians desperately avoid ever having to turn a page.
+Flipping through music sheets is incredibly annoying. A person has to take their hand off an instrument to turn the page and often loses their spot. Musicians desperately avoid ever having to turn a page.
 
 One day we thought <em>"how can we solve this problem? How can we avoid using our hands to turn a page?"</em> and the idea for Muvïc was born.
 
-We came together as four individuals, passionate about sound, music, and digital-audio. We developed Muvïc in 36 hours! This beautiful web-application which uses face-recognition algorithms to scan for facial queues and turn the music sheets at the appropriate moment.
+We came together as four individuals, passionate about sound, music, and digital-audio. We developed Muvïc in less than 36 hours! This beautiful web-application that uses face-recognition algorithms to scan for facial cues and turn the music sheets at the appropriate moment.
 </p>
 
 <h2> 💪 How It Works </h2>
 <p>
-Muvïc lets you select a pdf of sheet music from your collection. Want more sheet music in your collection? Muvïc lets you upload your own PDFs or lets you explore a sheet music available for download from the shop. 
+Muvïc lets a user select a pdf of sheet music from their account collection. What if a user wants more sheet music in their collection? Muvïc lets a user upload their own PDFs or explore sheet music available for download from the shop. 
 
-Once you have selected a piece to play Muvïc will ask for access to your device's camera. Once Muvïc recognizes your face, you will be able to use facial cues to move through the music sheets. Raise your eye brows to move forward. If you go too far you can move back by furrowing your brow. 
+Once a user has selected a piece to play Muvïc will ask for access to the device's camera. Once Muvïc recognizes a user's face, they will be able to use facial cues to move through the music sheets. It takes an eyebrow raise to move forward, and an eyebrow furrow to move back.
 
 You play, Muvïc moves. 
 
@@ -26,8 +26,8 @@ Try it now: <a href = "http://muvic.org"> Muvïc </a>
 <h2> 🔑 Key functionalities </h2>
 
 - Moves through sheet music with facial cues
-- Raise eyebrows to move forward
-- Furrow eyebrow to move back
+   - Raise eyebrows to move forward
+   - Furrow eyebrow to move back
 - Holds pdf sheet music collections
 - Upload music PDFs
 - Access to a shop to download new sheet music
