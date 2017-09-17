@@ -15,9 +15,9 @@ We came together as four individuals, passionate about sound, music, and digital
 
 <h2> 💪 How It Works </h2>
 <p>
-Muvïc lets you select a pdf of sheet music from your collection. Want more sheet music in your collection? Muvïc lets you upload your own PDFs or lets you explore a sheet music available for download from the shop. 
+Muvïc lets you select a pdf of sheet music from your collection. Want more sheet music in your collection? Muvïc allows you to upload your music sheets PDF or lets you explore a variety of sheets available for download from the shop.
 
-Once you have selected a piece to play Muvïc will ask for access to your device's camera. Once Muvïc recognizes your face, you will be able to use facial cues to move through the music sheets. Raise your eye brows to move forward. If you go too far you can move back by furrowing your brow. 
+Once you have selected a piece to play, Muvïc will ask for access to your device's camera. Once Muvïc recognizes and maps your face, you will be able to use facial cues to move through the music sheets. You can try it yourself by raise your eyebrows to progress to the next section. Conversely, you can go to the previous part by furrowing your eyebrows.
 
 You play, Muvïc moves. 
 
