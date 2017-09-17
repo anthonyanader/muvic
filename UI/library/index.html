@@ -2,84 +2,116 @@
 <html>
 
 <head>
-  <!-- jquery and materialize -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- jquery and materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <!-- handlebars -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
 
-  <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-storage.js"></script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-storage.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
-  <nav>
-    <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo">Collection</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <script id="sheets-template" type="text/x-handlebars-template">
-    <div class="container sheetcarditem" style="margin-top: 1em;">
-      <div class="row">
-        {{#each sheets}}
-        <div class="col s6 m3">
-          <div class="card" onclick="location.href = '/viewer#{{xmlpath}}'">
-            <div class="card-content center sheet-card">
-              <span class="card-title" style="white-space: nowrap; overflow:hidden;">{{name}}</span>
-              <img src="sheet.png" style="width:100%; height auto;"></img>
-            </div>
-          </div>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Collection</a>
         </div>
-        {{/each}}
-      </div>
+    </nav>
+
+    <script id="sheets-template" type="text/x-handlebars-template">
+        <div class="container sheetcarditem" style="margin-top: 1em;">
+            <div class="row">
+                {{#each sheets}}
+                <div class="col s6 m3" id="{{id}}">
+                    <div class="card" onclick="goTo('{{xmlpath}}');">
+                        <div class="card-content center sheet-card">
+                            <span class="card-title" style="white-space: nowrap; overflow:hidden;">{{name}}</span>
+                            <img src="sheet.png" style="width:100%; height:auto;">
+                            <i class="material-icons deleteicon" onclick="deleteSheet('{{id}}')" style="position:absolute; top:5px; left:5px; display:none;">close</i>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+    <div class="fixed-action-btn add-sheet vertical">
+        <a data-target="modal1" id="addsheet" class="btn-floating btn-large waves-effect waves-light red lighten-1">
+            <i class="material-icons">publish</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating blue" id="deletebtn"><i class="material-icons">delete</i></a></li>
+        </ul>
+        <input id="fileupload" type="file" accept=".xml" onchange="selectFile(this.files)" />
     </div>
-  </script>
-
-  <div class="fixed-action-btn add-sheet">
-    <a id="addsheet" class="btn-floating btn-large waves-effect waves-light red">
-      <i class="material-icons">add</i>
-    </a>
-    <input id="fileupload" type="file" onchange="upload(this.files)"/>
-  </div>
-  <div id="addsheettarget" class="tap-target" data-activates="addsheet">
-    <div class="tap-target-content">
-      <h5>Add your sheet music here!</h5>
-      <p>You can also drag and drop PDFs into the window</p>
+    <div id="addsheettarget" class="tap-target" data-activates="addsheet">
+        <div class="tap-target-content">
+            <h5>Add your sheet music here!</h5>
+            <p>You can also drag and drop PDFs into the window</p>
+        </div>
     </div>
-  </div>
 
-  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBKSR50Im22MWrl-9kri0giDVoYd6VjcDY",
-      authDomain: "muvic-7c878.firebaseapp.com",
-      databaseURL: "https://muvic-7c878.firebaseio.com",
-      projectId: "muvic-7c878",
-      storageBucket: "muvic-7c878.appspot.com",
-      messagingSenderId: "953427818374"
-    };
-    firebase.initializeApp(config);
-  </script>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Upload Music XML</h4>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Song name" id="songname" type="text" class="validate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a class="waves-effect waves-light btn" id="selectfile">Select</a>
+                    <span id="filename" style="padding-left:1em;">No file selected</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="confirmUpload" class="modal-action waves-effect waves-blue btn-flat">
+                <span id="uploadText">Upload</span>
+                <div class="preloader-wrapper small active" id="uploadLoader" style="display:none;">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                            <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
 
-  <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBKSR50Im22MWrl-9kri0giDVoYd6VjcDY",
+            authDomain: "muvic-7c878.firebaseapp.com",
+            databaseURL: "https://muvic-7c878.firebaseio.com",
+            projectId: "muvic-7c878",
+            storageBucket: "muvic-7c878.appspot.com",
+            messagingSenderId: "953427818374"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="main.js"></script>
 
 </body>
 </html>
