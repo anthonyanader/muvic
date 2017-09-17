@@ -38,10 +38,10 @@ CARDS
 MAST-HEAD
 *******************************************************************/
 .cover-photo {
-    background: url(../img/cover-photo-muvic.jpg) no-repeat center center;
+    background: url(../img/cover-photo-muvic.jpg) no-repeat center bottom fixed;
     background-size: cover;
     opacity: 0.95;
-    height: 95vh;
+    height: 75vh;
     text-align:center;
 	display: flex;
 	margin: 0;
@@ -88,4 +88,12 @@ body {
 
 a {
     color: #4A4A4A;
+}
+
+/*other*/
+.logodiv {
+    background-color: rgba(0,0,0,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 2.5em 2.5em 2.5em;
 }
