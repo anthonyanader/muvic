@@ -4,7 +4,6 @@ var height = 480;
 var faceMode = affdex.FaceDetectorMode.LARGE_FACES;
 var detector = new affdex.CameraDetector(divRoot, width, height, faceMode);
 
-//detector.detectAllEmotions();
 detector.detectAllExpressions();
 
 detector.addEventListener("onInitializeSuccess", function() {
@@ -25,22 +24,36 @@ function onStop() {
 };
 
 detector.addEventListener("onWebcamConnectFailure", function() {
-  alert("Webcam access denied");
+  alert("Webcam access denied. Facial cue movement is disabled.");
 });
 
-//post to turn music page forward or not
+//Get request to move music forward or backwards
 detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp){
-if(faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0)>= 99){
-  console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
-  $.get("server.js",
-  {
-    movePage: true
+if(faces.length > 0){
+  if(Number(faces[0].expressions.browRaise)).toFixed(0)>= 80){
+    console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
+    $.get("server.js",
+    {
+      movePage: true
     })
-}else{
-  $.get("server.js",
-  {
-    movePage: false
-  })
+  }else{
+    $.get("server.js",
+    {
+      movePage: false
+    })
+  }
+
+  if(Number(faces[0].expressions.browFurrow)).toFixed(0)>=80){
+	 $.get("server.js",
+		 {
+       moveBack: true
+     })
+   }else{
+     $.get("server.js",
+     {
+       moveBack: false
+     })
+   }
 }
 });
 
