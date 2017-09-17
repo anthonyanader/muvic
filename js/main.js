@@ -1,3 +1,8 @@
+// $("#arrow-click").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $("#intro").offset().top},
+//         'slow');
+// });
 function scroll_to(section){
 	$('html, body').animate({
 		scrollTop: $(section).offset().top
@@ -5,13 +10,7 @@ function scroll_to(section){
 }
 
 $(document).ready(function () {
-    window.onload=function(){
-        setTimeout(function(){
-            scrollTo(0,-1);
-        },0);
-    }
-
-    $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 
     var previewNode = document.querySelector("#zdrop-template");
     previewNode.id = "";
