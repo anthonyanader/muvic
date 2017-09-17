@@ -3,6 +3,20 @@ function scroll_to(section){
 		scrollTop: $(section).offset().top
 	},1500);
 }
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 1500);
+        return false;
+      }
+    }
+  });
+});
 
 $(document).ready(function () {
     window.onload=function(){
@@ -10,40 +24,5 @@ $(document).ready(function () {
             scrollTo(0,-1);
         },0);
     }
-
     $(".button-collapse").sideNav();
-
-    var previewNode = document.querySelector("#zdrop-template");
-    previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);
-
-      var zdrop = new Dropzone("#zdrop", {
-            url: '/Home/UploadFile',
-            maxFilesize:20,
-            previewTemplate: previewTemplate,
-            autoQueue: false,
-            previewsContainer: "#previews",
-            clickable: "#zdrop"
-    });
-
-      zdrop.on("totaluploadprogress", function (progress) {
-        var progr = document.querySelector(".progress .determinate");
-        if (progr === undefined || progr === null)
-            return;
-
-        progr.style.width = progress + "%";
-    });
-
-    zdrop.on('dragenter', function () {
-        $('#zdrop').addClass('red lighten-1 white-text');
-    });
-
-    zdrop.on('dragleave', function () {
-        $('#zdrop').addClass('white black-text').removeClass('green lighten-1 white-text');
-    });
-
-    zdrop.on('drop', function () {
-        $('#zdrop').addClass('white black-text').removeClass('green lighten-1 white-text');
-    });
 });
