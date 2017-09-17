@@ -19,14 +19,16 @@ Muvic
 
 <h2> Key functionalities </h2>
 
-<h2> Important Technologies, APIs and references </h2>
+<h2> 👨‍💻 Important Technologies, APIs and references </h2>
 
 * <p> <b>FireBase</b> - Firebase is a mobile and web application development platform </p>
 <p align = "center"><a href = "https://firebase.google.com/"><img src="https://firebase.google.com/_static/6db4302793/images/firebase/lockup.png" width="300px"></a></p>
 
 * <p> <b>AJAX</b> - AJAX is a set of Web development techniques using many Web technologies on the client side to create asynchronous Web applications</p> 
 <p align="center"><a herf="http://api.jquery.com/jquery.ajax/"><img src="http://wikiwebpedia.com/wp-content/uploads/ajax-logo1.jpg" width="300px"></a></p>
+
 * <p> <b>pdf.js</b> </p>
+
 * <p> <b>Affectiva Affedex API </b>- Affectiva is an emotion measurement technology company that grew out of MIT's Media Lab which has developed a way for computers to recognize human emotions based on facial cues or physiological responses
 <p align = "center"> <a href = "https://www.affectiva.com/"><img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Affectiva_logo.jpg" width="300px"></a>
 
