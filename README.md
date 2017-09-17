@@ -21,7 +21,8 @@ Muvic
 
 <h2> Important Technologies, APIs and references </h2>
 
-* <p> <b>FireBase</b> </p>
+* <p> <b>FireBase</b> - Firebase is a mobile and web application development platform </p>
+<p align = "center"><a href = "https://firebase.google.com/"><img src="https://firebase.google.com/_static/6db4302793/images/firebase/lockup.png"></a></p>
 * <p> <b>AJax </b> </p>
 * <p> <b>pdf.js</b> </p>
 * <p> <b>Affectiva Affedex API </b>- Affectiva is an emotion measurement technology company that grew out of MIT's Media Lab which has developed a way for computers to recognize human emotions based on facial cues or physiological responses
