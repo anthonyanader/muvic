@@ -4,7 +4,7 @@
 Muvic Moves For You
 </h1>
 
-<h2> Inspiration </h2>
+<h2>  💡 Inspiration </h2>
 <p>
 Flipping through music sheets is incredibly annoying. You have to take your hand off your instrument and often lose your spot where reading. Musicians desperately avoid ever having to turn a page.
 One day we thought <em>"what if I didn't have to do this"</em> and the idea for Muvic was born.
