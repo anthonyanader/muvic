@@ -27,7 +27,7 @@ Try it now: <a href = "http://muvic.org"> Muvïc </a>
 </p>
 <h2> 🔑 Key functionalities </h2>
 
-- Moves through sheet music with facial cues
+- Moves through sheet music using facial recognition algorithms
    - Raise eyebrows to move forward
 - Holds xml sheet music collections
 - Upload music XMLs
