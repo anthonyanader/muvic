@@ -30,7 +30,7 @@ detector.addEventListener("onWebcamConnectFailure", function() {
 
 //post to turn music page forward or not
 detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp){
-if(faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0)>= 99){
+if(faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0)>= 80){
   console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
   $.get("server.js",
   {

@@ -39,3 +39,16 @@ storage.ref('/users/' + uuid + '/files/' + data.url).getDownloadURL().then(funct
 }).catch(function(error) {
   // Handle any errors
 });
+
+
+doingFacialRecog = false;
+function facialRecog() {
+    if (doingFacialRecog) {
+        onStop();
+        $("#toolbar-facial-recog").text("Enable Facial Recognition");
+    } else {
+        onStart();
+        $("#toolbar-facial-recog").text("Disable Facial Recognition");
+    }
+    doingFacialRecog = !doingFacialRecog;
+}
