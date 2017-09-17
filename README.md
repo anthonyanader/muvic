@@ -17,7 +17,9 @@ We came together as four individuals, passionate about sound, music, and digital
 <p>
 Muvïc lets a user select a pdf of sheet music from their account collection. What if a user wants more sheet music in their collection? Muvïc lets a user upload their own PDFs or explore sheet music available for download from the shop. 
 
-Once a user has selected a piece to play Muvïc will ask for access to the device's camera. Once Muvïc recognizes a user's face, they will be able to use facial cues to move through the music sheets. It takes an eyebrow raise to move forward, and an eyebrow furrow to move back.
+Once a user has selected a piece to play Muvïc will ask for access to the device's camera. Once Muvïc recognizes a user's face, they will be able to use facial cues to move through the music sheets. It only takes an eyebrow raise to move forward. 
+
+Alternatively, users have the option to play with a measure tracker and a metronome to move at the same rate the song is supposed to be played. 
 
 You play, Muvïc moves. 
 
@@ -27,11 +29,10 @@ Try it now: <a href = "http://muvic.org"> Muvïc </a>
 
 - Moves through sheet music with facial cues
    - Raise eyebrows to move forward
-   - Furrow eyebrow to move back
-- Holds pdf sheet music collections
-- Upload music PDFs
-- Access to a shop to download new sheet music
+- Holds xml sheet music collections
+- Upload music XMLs
 - Metronome based on time signature
+- Measure tracking
 
 
 <h2> 👨‍💻 Important Technologies, APIs and references </h2>
