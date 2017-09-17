@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Muvic</title>
+    <title>Muvïc | You play, Muvïc moves.</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css>
     <link rel="stylesheet" href="css/main.css">
 
-
     <!--Website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -22,6 +21,15 @@
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Favicon code -->
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicon code -->
 </head>
 <header>
     <nav class="nav-fixed">
@@ -48,30 +56,27 @@
 </header>
 <body>
     <section id="about">
-        <div class="row">
-            <h1 class="center-align">Muvïc</h1>
-        </div>
         <div class="container">
-            <div class="card-panel waves-effect waves-block waves-red pt0 hovicon" id="zdrop">
-                <p class="center-align">Add or Drop favorite Musical Sheet</p>
-            </div>
-
-            <div class="collection" id="previews">
-                <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
-                    <div class="left pv zdrop-info" data-dz-thumbnail>
-                        <div>
-                            <span data-dz-name></span> <span data-dz-size></span>
-                        </div>
-                        <div class="progress">
-                            <div class="determinate" style="width:0" data-dz-uploadprogress></div>
-                        </div>
-                    </div>
-
-                    <div class="secondary-content actions">
-                        <a href="#!" class="btn waves-effect waves-light start"><i class="large material-icons">add</i></a>
-                        <a href="#!" data-dz-remove class="btn ph red white-text waves-effect waves-light"><i class="large material-icons">clear</i></a>
-                    </div>
+            <h1 class="center-align">About</h1>
+            <div class="about-text row">
+                    <p class="flow-text">Muvïc allows a user select a pdf of sheet music from your collection. Want more sheet music in your collection?
+                        Muvïc allows you to upload your music sheets PDF or lets you explore a variety of sheets available for download from the shop.
+                        Once you have selected a piece to play, Muvïc will ask for access to your device's camera.
+                        Once Muvïc recognizes and maps your face, you will be able to use facial cues to move through
+                        the music sheets. You can try it yourself by raise your eyebrows to progress to the next section.
+                        Conversely, you can go to the previous part by furrowing your eyebrows.
+                    </p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="collection">
+        <div class="row">
+            <div class="col 12">
+
+            </div>
+            <div class="col 12">
+                <img class=" collection-image responsive-img" src="img/record-collection.jpg">
             </div>
         </div>
     </section>
