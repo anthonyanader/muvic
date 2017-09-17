@@ -30,9 +30,10 @@ detector.addEventListener("onWebcamConnectFailure", function () {
 
 //post to turn music page or not
 detector.addEventListener("onImageResultsSuccess", function (faces, image, timestamp) {
-    if (faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0) >= 85) {
+    console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
+    if (faces.length > 0 && (Number(faces[0].expressions.browRaise)).toFixed(0) >= 90) {
         console.log((Number(faces[0].expressions.browRaise)).toFixed(0));
-        window.scrollBy(0, 100); 
+        window.scrollTo(0, 1200); 
     }
 });
 
