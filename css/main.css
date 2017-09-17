@@ -4,6 +4,7 @@ NAVIGATION
 nav {
     height: 60px;
     padding:0 2%;
+    font-weight: 300;
 }
 nav a{
     line-height: 60px;

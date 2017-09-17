@@ -1,15 +1,14 @@
-
-function scroll_to(section) {
-    $('html, body').animate({
-        scrollTop: $(section).offset().top
-    }, 1500);
+function scroll_to(section){
+	$('html, body').animate({
+		scrollTop: $(section).offset().top
+	},1500);
 }
 
 $(document).ready(function () {
-    window.onload = function () {
-        setTimeout(function () {
-            scrollTo(0, -1);
-        }, 0);
+    window.onload=function(){
+        setTimeout(function(){
+            scrollTo(0,-1);
+        },0);
     }
 
     $(".button-collapse").sideNav();
@@ -19,16 +18,16 @@ $(document).ready(function () {
     var previewTemplate = previewNode.parentNode.innerHTML;
     previewNode.parentNode.removeChild(previewNode);
 
-    var zdrop = new Dropzone("#zdrop", {
-        url: '/Home/UploadFile',
-        maxFilesize: 20,
-        previewTemplate: previewTemplate,
-        autoQueue: false,
-        previewsContainer: "#previews",
-        clickable: "#zdrop"
+      var zdrop = new Dropzone("#zdrop", {
+            url: '/Home/UploadFile',
+            maxFilesize:20,
+            previewTemplate: previewTemplate,
+            autoQueue: false,
+            previewsContainer: "#previews",
+            clickable: "#zdrop"
     });
 
-    zdrop.on("totaluploadprogress", function (progress) {
+      zdrop.on("totaluploadprogress", function (progress) {
         var progr = document.querySelector(".progress .determinate");
         if (progr === undefined || progr === null)
             return;
