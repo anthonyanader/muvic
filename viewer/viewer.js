@@ -12,8 +12,8 @@ ref.once("value", function (snapshot) {
 
 var storage = firebase.storage();
 storage.ref('/users/' + uuid + '/files/' + data.url).getDownloadURL().then(function(url) {
-  var VexDocument = null;
-  var VexFormatter = null;
+  VexDocument = null;
+  VexFormatter = null;
   $.ajax({
     url: url,
     success: function(data) {
@@ -51,4 +51,33 @@ function facialRecog() {
         $("#toolbar-facial-recog").text("Disable Facial Recognition");
     }
     doingFacialRecog = !doingFacialRecog;
+}
+
+metronomeEh = false;
+bpm = 80;
+var audio = new Audio('tick.mp3');
+function doMetronome() {
+    if (metronomeEh) {
+        $("#toolbar-metronome").text("Enable Metronome");
+        clearInterval(tickInterval);
+    } else {
+        tickInterval = setInterval(function () {
+            audio.play();
+        }, 60000/bpm);
+        $("#toolbar-metronome").text("Disable Metronome");
+    }
+    metronomeEh = !metronomeEh;
+    $("#metronome").toggle('fast');
+}
+
+function updateBPM(event) {
+    bpm = $("#bpmRange").val();
+    clearInterval(tickInterval);
+    tickInterval = setInterval(function () {
+        audio.play();
+    }, 60000 / bpm);
+}
+
+function highlightMeasure() {
+
 }
