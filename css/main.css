@@ -1,32 +1,7 @@
 /*******************************************************************
 NAVIGATION
 *******************************************************************/
-nav {
-    height: 60px;
-    padding:0 2%;
-}
-nav a{
-    line-height: 60px;
-}
 
-a.current {
-    text-decoration: underline;
-}
-
-.brand-logo {
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-.nav-fixed {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  padding-bottom:0;
-  margin-bottom: 0;
-  z-index: 997;
-}
 
 /*******************************************************************
 CARDS
@@ -37,10 +12,10 @@ CARDS
 MAST-HEAD
 *******************************************************************/
 .cover-photo {
-    background: url(../img/cover-photo-muvic.jpg) no-repeat center center;
+    background: url(../img/cover-photo-muvic.jpg) center center no-repeat;
     background-size: cover;
-    opacity: 0.95;
-    height: 95vh;
+    opacity: 0.5;
+    height: 100vh;
     text-align:center;
 	display: flex;
 	margin: 0;
@@ -50,27 +25,11 @@ MAST-HEAD
 
 }
 
-.arrow-down {
-  height: 0;
-  width: 0;
-  margin: 0 auto;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #ee6e73;
-}
+/*******************************************************************
+INTRODUCTION
+*******************************************************************/
+.introduction{
 
-/*******************************************************************
-ABOUT
-*******************************************************************/
-#about {
-    width: 100%;
-    height: 84vh;
-}
-/*******************************************************************
-UPLOAD FORM
-*******************************************************************/
-.secondary-content {
-    padding: 0 1%;
 }
 
 /*******************************************************************
