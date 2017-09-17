@@ -1,5 +1,5 @@
 <h1 align = "center">
-<img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431">
+<img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431" style="width: 500px;">
 
 Muvic Moves For You
 </h1>
