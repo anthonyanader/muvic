@@ -18,9 +18,13 @@ We came together as four individuals, passionate about sound, music, and digital
 Muvïc
 </p>
 
-<h2> How It Works <h2>
+<h2> 💪 How It Works <h2>
+<p>
+Muvïc lets you select a pdf of sheet music from your collection. Want more sheet music in your collection? Muvïc lets you upload your own PDFs or lets you explore a sheet music available for download from the shop. 
 
-<h2> Key functionalities </h2>
+Once you have selected a piece to play Muvïc will ask for access to your device's camera. Once Muvïc recognizes your face, you will be able to use facial cues to move through the music sheets. 
+</p>
+<h2> 🔑 Key functionalities </h2>
 
 <h2> 👨‍💻 Important Technologies, APIs and references </h2>
 
