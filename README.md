@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431">
+<a href="http://muvic.org"><img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431"></a>
 </h1>
 
 > Muvïc Moves For You
@@ -13,11 +13,6 @@ One day we thought <em>"how can we solve this problem? How can we avoid using ou
 We came together as four individuals, passionate about sound, music, and digital-audio. We developed Muvïc in 36 hours! This beautiful web-application which uses face-recognition algorithms to scan for facial queues and turn the music sheets at the appropriate moment.
 </p>
 
-<h2> About </h2>
-<p>
-Muvïc
-</p>
-
 <h2> 💪 How It Works </h2>
 <p>
 Muvïc lets you select a pdf of sheet music from your collection. Want more sheet music in your collection? Muvïc lets you upload your own PDFs or lets you explore a sheet music available for download from the shop. 
@@ -25,6 +20,8 @@ Muvïc lets you select a pdf of sheet music from your collection. Want more shee
 Once you have selected a piece to play Muvïc will ask for access to your device's camera. Once Muvïc recognizes your face, you will be able to use facial cues to move through the music sheets. Raise your eye brows to move forward. If you go too far you can move back by furrowing your brow. 
 
 You play, Muvïc moves. 
+
+Try it now: <a href = "http://muvic.org"> Muvïc </a>
 </p>
 <h2> 🔑 Key functionalities </h2>
 
