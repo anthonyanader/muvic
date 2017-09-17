@@ -2,7 +2,7 @@
 <a href="http://muvic.org"><img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431"></a>
 </h1>
 
-> Muvïc Moves For You
+> You Play, Muvïc Moves
 
 <h2> 💡 Inspiration </h2>
 <p>
