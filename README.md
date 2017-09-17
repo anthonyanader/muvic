@@ -25,7 +25,14 @@ Try it now: <a href = "http://muvic.org"> Muvïc </a>
 </p>
 <h2> 🔑 Key functionalities </h2>
 
-* Moves through sheet music with facial cues
+- Moves through sheet music with facial cues
+  - Raise eye brows to move forward
+  - Furrow your brow to move back
+- Holds your pdf sheet music collections
+- Upload your own music PDFs
+- Access to a shop to download new sheet music
+- Metronome based on time signature 
+
 
 <h2> 👨‍💻 Important Technologies, APIs and references </h2>
 
