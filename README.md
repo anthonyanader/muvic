@@ -4,13 +4,13 @@
 
 > Muvïc Moves For You
 
-<h2>  💡 Inspiration </h2>
+<h2> 💡 Inspiration </h2>
 <p>
 Flipping through music sheets is incredibly annoying. You have to take your hand off your instrument to turn the page and often lose the spot you were reading. Musicians desperately avoid ever having to turn a page.
 
 One day we thought <em>"how can we solve this problem? How can we avoid using our hands to turn a page?"</em> and the idea for Muvïc was born.
 
-We came together as four individuals, passionate about sound, music, and digital-audio. We developed Muvïc in 36 hours! This beautiful web-application which uses face-detection algorithms to scan for facial queues and turn the music sheets at the appropriate moment.
+We came together as four individuals, passionate about sound, music, and digital-audio. We developed Muvïc in 36 hours! This beautiful web-application which uses face-recognition algorithms to scan for facial queues and turn the music sheets at the appropriate moment.
 </p>
 
 <h2> About </h2>
