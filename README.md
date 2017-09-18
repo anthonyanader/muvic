@@ -59,5 +59,5 @@ Try it now: <a href = "https://muvic.pwstegman.me/"> Muvïc </a>
 </p>
 
 <h3 align = "center">
-<img src="http://www198.lunapic.com/editor/working/150555764556733?978257898">
+<a href="https://muvic.pwstegman.me/"><img src="http://res.cloudinary.com/anthonyanader/image/upload/v1505765532/mstile-150x150_adwstt.png">
 </h3>
