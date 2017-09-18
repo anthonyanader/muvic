@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="http://muvic.org"><img src="http://www198.lunapic.com/do-not-link-here-use-hosting-instead/150556305195094?7257504431"></a>
+<a href="https://muvic.pwstegman.me/"><img src="http://res.cloudinary.com/anthonyanader/image/upload/v1505765396/muvic-logo_lkouxr.png"></a>
 </h1>
 
 > You play, Muvïc moves
@@ -23,7 +23,7 @@ Alternatively, users have the option to play with a measure tracker and a metron
 
 You play, Muvïc moves. 
 
-Try it now: <a href = "http://muvic.org"> Muvïc </a>
+Try it now: <a href = "https://muvic.pwstegman.me/"> Muvïc </a>
 </p>
 <h2> 🔑 Key functionalities </h2>
 
