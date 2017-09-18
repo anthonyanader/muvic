@@ -92,8 +92,13 @@ a {
 
 /*other*/
 .logodiv {
+    width: 75vw;
     background-color: rgba(0,0,0,0.5);
     margin-left: auto;
     margin-right: auto;
     padding: 0em 2.5em 2.5em 2.5em;
+}
+.logodiv h2{
+    font-size: 3.5vw;
+    color: white;
 }
